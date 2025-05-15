@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">Hello, world!</div>
+    <div id="root">Bonjour tout le monde  🤗</div>
+
+
+    <!-- liens CDN pour tester react sans mettre en place une configuration standard, ne permet pas de créer une véritable app React -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- en dev, babel permet de transformer dernières fonctionalités de JS en code compatible avec les navigateurs plus anciens -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- script js react -->
+    <script type="text/babel" src="./app.js"></script>
+
+</body>
+</html>
