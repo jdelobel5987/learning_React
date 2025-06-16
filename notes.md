@@ -31,3 +31,15 @@ Vous êtes venu à bout de ce chapitre sur les composants en JSX ! Bravo à vous
   * deux composants doivent toujours être wrappés dans  **un seul composant parent** ,
   * les noms des composants  **commencent par une majuscule** ,
   * les balises des composants  **doivent être refermées** .
+
+
+### En résumé
+
+* Les développeurs utilisent des outils automatisés pour faciliter leur expérience de développement.
+* Create React App (CRA) est la boîte à outils créée par Facebook, qui reste encore la référence pour initier un projet React.
+* Un projet initialisé avec CRA possède toujours :
+  * un fichier `index.html`   qui est le template où vivra notre app React ;
+  * un `package.json`   qui liste les dépendances et les scripts ;
+  * un fichier `index.js`   dans lequel notre app React est initialisée, et greffée au HTML.
+* CRA s'exécute avec l’aide d’un gestionnaire de paquet (dans ce cours, `yarn`).
+* Webpack permet d'importer simplement les fichiers entre eux.

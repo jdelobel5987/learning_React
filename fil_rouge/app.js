@@ -12,19 +12,19 @@ function Description() {
     )
 }
 
-// function Image() {
-//     const imageUrl = "https://m.media-amazon.com/images/I/617HcycXHYL._AC_UF1000,1000_QL80_.jpg";
-//     return(
-//         <img src={imageUrl} alt="La Maison Jungle" width="50%" />
-//     )
-// }
+function Image() {
+    const imageUrl = "https://m.media-amazon.com/images/I/617HcycXHYL._AC_UF1000,1000_QL80_.jpg";
+    return(
+        <img src={imageUrl} alt="La Maison Jungle" width="50%" />
+    )
+}
 
 
 function Banner() {
     return (<div>
         <Header />
         <Description />
-        {/* <Image /> */}
+        <Image />
     </div>)
 }
 
@@ -35,18 +35,23 @@ function Cart() {
         "bouquet de fleurs": 15,
     }
 
+    const title = "Mon panier";
+
     return(
-        <ul>
-            {Object.entries(price).map(([key, value]) => {
-                return (
-                    <li key={key}>{key} - {value}€</li>
-                )
-            })}
-            <p>Total :&nbsp;
-                {/* reduce accumulateur + valeur courrante, acc initialisé à 0 */}
-                {Object.values(price).reduce((acc, curr) => acc + curr, 0)}€
-            </p>
-        </ul>
+        <>
+            <h2>{title}</h2>
+            <ul>
+                {Object.entries(price).map(([key, value]) => {
+                    return (
+                        <li key={key}>{key} - {value}€</li>
+                    )
+                })}
+                <p>Total :&nbsp;
+                    {/* reduce accumulateur + valeur courrante, acc initialisé à 0 */}
+                    {Object.values(price).reduce((acc, curr) => acc + curr, 0)}€
+                </p>
+            </ul>
+        </>
     )
 }
 
