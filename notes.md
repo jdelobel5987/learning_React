@@ -18,7 +18,6 @@ React lui-même ne manipule pas directement le DOM du navigateur. À la place, R
 * Trois des avantages de React sont sa  **communauté** , sa **documentation** et ses  **opportunités professionnelles** .
 * Vous savez maintenant comment **transformer un simple fichier de HTML en React** – et avez créé votre premier composant !
 
-
 ### En résumé
 
 Vous êtes venu à bout de ce chapitre sur les composants en JSX ! Bravo à vous. 😎 Maintenant vous savez que :
@@ -32,7 +31,6 @@ Vous êtes venu à bout de ce chapitre sur les composants en JSX ! Bravo à vous
   * les noms des composants  **commencent par une majuscule** ,
   * les balises des composants  **doivent être refermées** .
 
-
 ### En résumé
 
 * Les développeurs utilisent des outils automatisés pour faciliter leur expérience de développement.
@@ -43,3 +41,10 @@ Vous êtes venu à bout de ce chapitre sur les composants en JSX ! Bravo à vous
   * un fichier `index.js`   dans lequel notre app React est initialisée, et greffée au HTML.
 * CRA s'exécute avec l’aide d’un gestionnaire de paquet (dans ce cours, `yarn`).
 * Webpack permet d'importer simplement les fichiers entre eux.
+
+### En résumé
+
+* L'attribut **className** permet de **préciser une classe à un élément React** pour lui indiquer du CSS.
+* Le fichier CSS correspondant peut être **importé directement** dans un fichier  `.js`.
+* L'attribut  `style`   permet d' **intégrer du style directement** , on appelle cela du * inline style* .
+* Les **images** sont importées par React grâce à  **Webpack** . Il suffit d'importer l'image souhaitée.
