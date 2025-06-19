@@ -17,6 +17,7 @@
 // }
 
 import { plantList } from '../data/plantList';
+import '../styles/ShoppingList.css';
 
 function ShoppingList() {
 
@@ -31,16 +32,21 @@ function ShoppingList() {
 	return (
         <>
             <h1>Liste de courses</h1>
+
             <h2>Catégories de plantes :</h2>
             <ul>
                 {categories.map((category) => (
                     <li key={category}>{category}</li>
                 ))}
             </ul>
+
             <h2>Liste des plantes</h2>
-            <ul>
+            <ul className="lmj-plant-list">
                 {plantList.map((plant) => (
-                    <li key={plant.id}>{plant.name}</li>
+                    <li key={plant.id} className="lmj-plant-item">
+                        {plant.name}
+                        {plant.isSpecialOffer ? <span className="lmj-sales">Soldes</span> : ""}
+                    </li>
                 ))}
             </ul>
         </>
