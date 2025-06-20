@@ -48,3 +48,27 @@ Vous êtes venu à bout de ce chapitre sur les composants en JSX ! Bravo à vous
 * Le fichier CSS correspondant peut être **importé directement** dans un fichier  `.js`.
 * L'attribut  `style`   permet d' **intégrer du style directement** , on appelle cela du * inline style* .
 * Les **images** sont importées par React grâce à  **Webpack** . Il suffit d'importer l'image souhaitée.
+
+### En résumé
+
+* À partir d’une liste de données,  `map()`   permet de créer une liste de composants React.
+* La prop  `key`   est indispensable dans les listes de composants.
+* Si vous voulez éviter les bugs, la prop  `key`   doit :
+  * être unique au sein de la liste ;
+  * perdurer dans le temps.
+* La best practice pour créer une  `key`   est d’utiliser l’ `id`   unique associée à une donnée, et de ne pas vous contenter d'utiliser l'index de l'élément dans la liste.
+* Une condition ternaire permet d’afficher un élément ou un autre dans le JSX, répondant à la condition "if… else...".
+* Il existe d'autres manières de créer des conditions en React, notamment en sortant les conditions du JSX.
+
+### En résumé
+
+* Les props sont des objets que l'on peut récupérer dans les paramètres de notre composant fonction.
+* Il existe deux syntaxes pour assigner une valeur à une prop :
+  * les guillemets pour les  `string` ;
+  * les accolades pour tout le reste : nombres, expressions JavaScript, booléen, etc.
+* La déstructuration est une syntaxe permettant de déclarer une variable en l'affectant directement à la valeur d'un objet (ou tableau).
+* Une *prop* est :
+  * toujours passée par un composant parent à son enfant ;
+  * considérée en lecture seule dans le composant qui la reçoit.
+* La prop  `children`   est renseignée en imbriquant les enfants dans le parent : `<Parent><Enfant />``</Parent>`.
+* `children`   est utile lorsqu'un composant ne connaît pas ses enfants à l'avance
