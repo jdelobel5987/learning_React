@@ -25,13 +25,20 @@
 
 // export default App;
 
+
 import Banner from './Banner';
+import logo from '../assets/logo.png';
 import Cart from './Cart';
 import ShoppingList from './ShoppingList';
 
+const title = "La maison jungle";
+
 function App() {
   return <>
-    <Banner />
+    <Banner>
+        <img src={logo} alt="logo de la maison jungle" className="lmj-logo" />
+        <h1 className="lmj-title">{title}</h1>
+    </Banner>
     <Cart />
     <ShoppingList />
   </>
